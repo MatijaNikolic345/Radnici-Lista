@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+
 import ListaRadnika from "./pages/ListaRadnika";
 import NovRadnik from "./pages/NovRadnik";
 import { Toaster } from "react-hot-toast";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="lista-radnika" />} />
-           
+
             <Route path="lista-radnika" element={<ListaRadnika />} />
             <Route path="nov-radnik" element={<NovRadnik />} />
           </Route>
