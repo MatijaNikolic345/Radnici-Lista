@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+::-webkit-scrollbar {
+  overflow: hidden;
+}
+*,
+*::after,
+*::before {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.headingNav:hover,
+.headingNav:active,
+.headingNav.active:link,
+.headingNav.active:visited {
+  color: #2563eb;
+  background-color: #e2e8f0;
+}
+.headingNav:hover svg,
+.headingNav:active svg,
+.headingNav.active:link svg,
+.headingNav.active:visited svg {
+  color: #2563eb;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+}
