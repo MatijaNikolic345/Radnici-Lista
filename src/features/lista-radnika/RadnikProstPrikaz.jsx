@@ -5,9 +5,9 @@ import RadnikDetaljno from "./RadnikDetaljno";
 
 function RadnikProstPrikaz({ radnik }) {
   return (
-    <div className="flex flex-col  p-3   w-72 bg-slate-50 hover:bg-[white] hover:shadow-2xl rounded-md hover:-translate-y-1 cursor-pointer">
+    <div className="flex flex-col  p-3 transition-all   w-72 bg-slate-50 hover:bg-[white] hover:shadow-2xl rounded-md hover:-translate-y-1 cursor-pointer">
       <RadnikDetaljno radnik={radnik}>
-        <div className="flex gap-3 border-b-2 border-slate-200 items-center pb-3">
+        <div className="flex gap-3 border-b-2 border-slate-200 items-center pb-3 ">
           <div className="w-14 h-14">
             <img
               className=" object-cover rounded-full w-full h-full"

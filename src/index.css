@@ -4,13 +4,6 @@
 ::-webkit-scrollbar {
   overflow: hidden;
 }
-*,
-*::after,
-*::before {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
 
 .headingNav:hover,
 .headingNav:active,

@@ -13,3 +13,22 @@ export const formatCurrency = (value, currency) =>
     style: "currency",
     currency: { currency },
   }).format(value);
+
+var missingNumber = function (nums) {
+  let result;
+  let newArr = nums.sort((a, b) => a - b);
+
+  newArr.forEach((int, i) => {
+    console.log(newArr[i + 1] - int);
+    if (newArr[i + 1]) {
+      if (newArr[i + 1] - int > 1) {
+        result = int + 1;
+      }
+    }
+    if (!newArr[i + 1] && !result) {
+      result = int + 1;
+    }
+  });
+  return result;
+};
+console.log(missingNumber([3, 0, 1]));
