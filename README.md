@@ -12,6 +12,17 @@ So ovime vršimo implementaciju ovih karakteristika:
 
 * Forma gde se dodaju novi radnici
 
+##Tehnološke odluke
+*Za pokretanje react app - Vite
+*Za stiling - Tailwind
+*Za server - Supabase(@supabase/supabase-js)
+*Za formu - react-hook-form
+*Za uspeh/error pop-ups(toasts) - react-hot-toast
+*Za ikonice - react-icons
+*Za routing - react-router-dom
+*Za promenu valuta - (nije pronadjen besplatan API koji radi sa RSD pa je izračunato sa konstantnim vrednostima)
+*Za računanje bruto plate - (nije pronađen API koji računa srpsku bruto platu pa je približno izračunato koristeci podatke iz 2023. godine)
+
 ## Preview Projekta
 
 
